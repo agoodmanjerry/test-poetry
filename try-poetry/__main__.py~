@@ -1,0 +1,8 @@
+from Pi import print_pi
+
+def main():
+    print_pi()
+
+if __name__ == "__main__":
+    main()
+
