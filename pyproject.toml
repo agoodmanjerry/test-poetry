@@ -4,11 +4,15 @@ version = "0.1.0"
 description = "It's a small project testing the functions of poetry."
 authors = ["Chia-Jui Chou <agoodmanjerry@gmail.com>"]
 readme = "README.md"
-packages = [{include = "try_poetry"}]
+packages = [{include = "try-poetry"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 numpy = "^1.26.3"
+
+[tool.poetry.scripts]
+#np_version = "try-poetry.__main__:main"
+Pi = "try-poetry.Pi:print_pi"
 
 
 [build-system]
